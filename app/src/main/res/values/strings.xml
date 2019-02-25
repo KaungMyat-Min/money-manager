@@ -1,3 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Money Manager</string>
+
+    <string name="app_name">TI MoneyManager</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="catagories_titles">
+        <item>အစား</item>
+        <item>ဝယ္ျခမ္း</item>
+        <item>ဖုန္း</item>
+        <item>ေဆး</item>
+        <item>ကားခ</item>
+        <item>အဝတ္</item>
+        <item>အိမ္</item>
+        <item>အေသာက္</item>
+        <item>အဆာေျပ</item>
+        <item>ေက်ာင္း</item>
+        <item>ခ်ိန္းေတြ႔</item>
+        <item>လည္ပတ္</item>
+        <item>ရုပ္ရွင္</item>
+        <item>အားကစား</item>
+        <item>ဆီဖိုး</item>
+        <item>လက္ေဆာင္</item>
+        <item>အျခား</item>
+    </string-array>
+    <string-array name="catagories_drawables">
+        <item>food</item>
+        <item>shopping</item>
+        <item>phone</item>
+        <item>medical</item>
+        <item>bus</item>
+        <item>cloth</item>
+        <item>home</item>
+        <item>drinky</item>
+        <item>tea</item>
+        <item>school</item>
+        <item>date</item>
+        <item>friend</item>
+        <item>cinema</item>
+        <item>spot</item>
+        <item>gas</item>
+        <item>gift</item>
+        <item>other</item>
+    </string-array>
+
+    <!-- user profile -->
+    <string name="prof_user_name">User Name</string>
+    <string name="prof_avg_salary">Salary</string>
+    <string name="prof_save_amt">Save Amount</string>
+    <string name="prof_cloth_cost">Cloth cost</string>
+    <string name="prof_house_rent">House rent</string>
+    <string name="prof_trans_fee">Car cost</string>
+    <string name="prof_salary_daily">Daily</string>
+    <string name="prof_salary_monthly">Monthly</string>
+    <string name="prof_mobile_sms">/sms</string>
+    <string name="prof_mobile_talk_time">/min</string>
+    <string name="prof_mobile_internet">/mb</string>
+
+    <!-- frag_use_save -->
+    <string name="use_but_txt_daily">Daily</string>
+    <string name="use_but_txt_monthly">Monthly</string>
+    <string name="use_but_txt_info">You have save 10000 in last week.</string>
+
+    <!-- frag individual -->
+    <string name="frag_indi_but_day">တစ္ရက္စာ</string>
+    <string name="frag_indi_but_month">တစ္လစာ</string>
+    <string name="frag_indi_txt_should_use">သံုးခ်င္တာ</string>
+    <string name="frag_indi_txt_actual_use">တကယ္သံုးတာ</string>
+    
+
+    <!-- dialog -->
+    <string name="dialog_hint">Eg: 60000</string>
+    <string name="dialog_unit">က်ပ္</string>
+
+    <!-- months -->
+
+    
+        <string-array name="array_months">
+        <item>ဇန္နဝါရီ</item>
+        <item>ေဖေဖာ္ဝါရီ</item>
+        <item>မတ္</item>
+        <item>ဧျပီ</item>
+        <item>ေမ</item>
+        <item>ဇြန္</item>
+        <item>ဇူလိုင္</item>
+        <item>ၾသဂုတ္</item>
+        <item>စက္တင္ဘာ</item>
+        <item>ေအာက္တုိဘာ</item>
+        <item>ႏိုဝင္ဘာ</item>
+        <item>ဒီဇင္ဘာ</item>
+    </string-array>
+    <string name="daily">တစ္ေန႔ခ်င္း</string>
+    <string name="monthly">တစ္လခ်င္း</string>
+    
+    <string name="custom_title">ဒီလဒီေလာက္ပဲသံုးမယ္</string>
+    <string name="category_show">ဘာအတြက္သံုး</string>
+    <string name="category_hide">ျပန္ေဖ်ာက္</string>
+    
+    <string-array name="tab_names">
+        <item>စုစုေပါင္း</item>
+        <item>တစ္မ်ိဳးခ်င္း</item>
+    </string-array>
+
 </resources>

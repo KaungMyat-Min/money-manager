@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="db_create_data_usage">        CREATE table DataUsage(
+     Title text NOT Null,
+     Amt int NOT Null,
+     Day int NOT null,
+     Month int NOT null,
+     Year int NOT null,
+     Date long NOT null
+    )</string>
+    <string name="db_create_money_usage">        CREATE table MoneyUsage(
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	userName varchar(50),
+	Title varchar(20) NOT NULL,
+    Amt int NOT NULL,
+     Day int NOT NULL,
+     Month int NOT NULL,
+     Year int NOT NULL,
+     hour int,
+     minute int,
+     reason text,
+     millisecond bigInt NOT NULL
+    )</string>
+    <string name="db_create_phone_usage">        CREATE table PhoneUsage(
+     Title text NOT Null,
+     Amt int NOT Null,
+     Day int NOT null,
+     Month int NOT null,
+     Year int NOT null,
+     Date long NOT null
+    )</string>
+    <string name="db_create_save_debt">        CREATE table SaveDebt(
+    	Title text NOT Null,
+     Amt int NOT Null,
+     Day int NOT null,
+     Month int NOT null,
+     Year int NOT null,
+     Date long NOT null
+    )</string>
+
+    <!-- usage -->
+
+    <string name="sql_select_total_daily_usage">        SELECT SUM(amt) as totalAmt,day from moneyUsage WHERE month = %1$s AND year = %2$S GROUP BY day ORDER BY day DESC</string>
+    <string name="sql_select_total_monthly_usage">         SELECT sum (amt),month from moneyUsage WHERE year = %1$s group by month order by month desc </string>
+    <string name="sql_select_daily_save">    SELECT amt,day from SaveDebt WHERE month = %1$s order by day DESC</string>
+    <string name="sql_select_monthly_save">    SELECT sum (amt), month from SaveDebt order by year desc, month desc limit 10</string>
+    <string name="sql_select_individual_daily">    SELECT totalAmt, title FROM (SELECT SUM(amt) AS totalAmt ,title FROM moneyUsage where day = %1$d AND month = %2$d AND year = %3$d GROUP BY title) AS tableTemp ORDER BY totalAmt DESC</string>
+    <string name="sql_select_individual_daily_order_millisecond">   SELECT SUM(amt) AS totalAmt ,title FROM moneyUsage where day = %1$d AND month = %2$d AND year = %3$d GROUP BY title ORDER BY millisecond DESC</string>
+
+    <string name="sql_select_individual_total">   SELECT SUM(amt) AS totalAmt ,title FROM moneyUsage where month = %1$d AND year = %2$d AND title = \"%3$s\"
+</string>
+
+    
+    
+    <string name="sql_select_total_amt_of_one_day">SELECT SUM(amt) AS totalAmt FROM moneyUsage where day = %1$d AND month = %2$d AND year = %3$d</string>
+    <string name="sql_select_total_amt_of_one_month">SELECT SUM(amt) AS totalAmt FROM moneyUsage where month = %1$d AND year = %2$d</string>
+    <string name="sql_select_total_amt_until_today">SELECT SUM(amt) AS totalAmt FROM moneyUsage where month = %1$d AND year = %2$d</string>
+    <string name="sql_select_individual_daily_for_chlid">   SELECT amt,reason ,hour,minute,id FROM moneyUsage where day = %1$d AND month = %2$d AND year = %3$d AND title = \"%4$s\"  ORDER BY millisecond DESC</string>
+    <string name="sql_select_individual_daily_line_chart">        SELECT sum(amt) as totalAmt,day FROM moneyUsage where month = %1$d AND year = %2$d AND title = \"%3$s\"  GROUP BY day ORDER BY day DESC</string>
+
+</resources>

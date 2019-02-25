@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:longClickable="true"
+    android:padding="3dp" >
+    
+ <com.trio.moneymanager.custom.CustomTextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:gravity="bottom"
+        android:text="Time"
+        android:textSize="20dp" />
+
+ <com.trio.moneymanager.custom.CustomTextView
+        android:id="@+id/child_amt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/item_list_child_margin_large"
+        android:gravity="top"
+        android:paddingRight="10dp"
+        android:text="1235" />
+
+ <com.trio.moneymanager.custom.CustomTextView
+        android:id="@+id/reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/time"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/time"
+        android:visibility="gone" />
+
+</RelativeLayout>

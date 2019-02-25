@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <com.trio.moneymanager.custom.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/use_txt_info"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@android:color/transparent"
+     android:gravity="left"
+     android:paddingBottom="3dp"
+     android:paddingLeft="3dp"
+     android:paddingTop="3dp"
+     android:textColor="@android:color/primary_text_light_nodisable"
+     android:textSize="20dp" />
+

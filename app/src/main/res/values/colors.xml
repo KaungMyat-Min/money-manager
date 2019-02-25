@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorPrimary">#5ecdcc</color>
+    <color name="colorActionMode">#5ecdbb</color>
+    <color name="colorPrimaryDark">#56bcbb</color>
+    <color name="tabsScrollColor">#8a140e</color>
+
+    <!-- fabcolors -->
+    <color name="fab_press">#90CAF9</color>
+    <color name="fab_normal">#03A9F4</color>
+
+    <!-- line chart colors -->
+    <color name="line_chart_background_color">#429aaa</color>
+    <color name="line_chart_fill_color">#183749</color>
+
+    <color name="bar_chart_background_color">#c0c0c0</color>
 </resources>

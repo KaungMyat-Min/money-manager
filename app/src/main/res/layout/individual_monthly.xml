@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+      android:background="@color/line_chart_background_color"
+       >
+
+    <include
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/tool_bar" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/use_chart_useage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+  <ExpandableListView
+        android:id="@+id/frag_daily_expandableList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/frag_daily_new_container"
+        android:layout_marginTop="@dimen/frag_daily_margin_narrow" />
+    
+</LinearLayout>
