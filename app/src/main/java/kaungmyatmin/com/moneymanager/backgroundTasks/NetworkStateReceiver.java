@@ -1,15 +1,10 @@
 package kaungmyatmin.com.moneymanager.backgroundTasks;
 
-import com.trio.moneymanager.Model.MobileDataHandler;
-import com.trio.moneymanager.POJO.MobileData;
+
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
-import android.sax.StartElementListener;
-import android.support.v4.net.ConnectivityManagerCompat;
 
 public class NetworkStateReceiver extends BroadcastReceiver{
 

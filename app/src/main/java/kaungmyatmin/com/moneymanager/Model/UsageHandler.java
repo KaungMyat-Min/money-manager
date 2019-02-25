@@ -16,10 +16,12 @@ import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
-import com.trio.moneymanager.R;
-import com.trio.moneymanager.DB.DataBaseAdaptor;
-import com.trio.moneymanager.DB.ValHolder;
-import com.trio.moneymanager.POJO.UsageData;
+
+import kaungmyatmin.com.moneymanager.DB.DataBaseAdaptor;
+import kaungmyatmin.com.moneymanager.DB.ValHolder;
+import kaungmyatmin.com.moneymanager.POJO.UsageData;
+import kaungmyatmin.com.moneymanager.R;
+
 
 public class UsageHandler {
 	private DataBaseAdaptor dbAdaptor;

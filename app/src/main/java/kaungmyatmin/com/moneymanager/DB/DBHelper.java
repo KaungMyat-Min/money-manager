@@ -1,11 +1,11 @@
 package kaungmyatmin.com.moneymanager.DB;
-
-import com.trio.moneymanager.R;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import kaungmyatmin.com.moneymanager.R;
 
 class DBHelper extends SQLiteOpenHelper {
 	private Context context;

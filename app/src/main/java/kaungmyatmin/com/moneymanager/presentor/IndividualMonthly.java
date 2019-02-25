@@ -1,4 +1,4 @@
-package kaungmyatmin.com.moneymanager;
+package kaungmyatmin.com.moneymanager.presentor;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -12,24 +12,25 @@ import com.github.mikephil.charting.components.XAxis.XAxisPosition;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
-import com.trio.moneymanager.DB.DataBaseAdaptor;
-import com.trio.moneymanager.DB.ValHolder;
-import com.trio.moneymanager.Model.UsageHandler;
-import com.trio.moneymanager.POJO.UsageData;
-import com.trio.moneymanager.custom.CustomExpandableListAdaptor;
-import com.trio.moneymanager.custom.CustomExpandableListAdaptorIndividualDaily;
-
-import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+
 import android.support.v7.widget.Toolbar;
-import android.widget.Button;
 import android.widget.ExpandableListView;
 
-public class IndividualMonthly extends ActionBarActivity {
+import kaungmyatmin.com.moneymanager.CustomMarkerView;
+import kaungmyatmin.com.moneymanager.DB.DataBaseAdaptor;
+import kaungmyatmin.com.moneymanager.DB.ValHolder;
+import kaungmyatmin.com.moneymanager.Model.UsageHandler;
+import kaungmyatmin.com.moneymanager.POJO.UsageData;
+import kaungmyatmin.com.moneymanager.R;
+import kaungmyatmin.com.moneymanager.custom.CustomExpandableListAdaptor;
+import kaungmyatmin.com.moneymanager.custom.CustomExpandableListAdaptorIndividualDaily;
+import kaungmyatmin.com.moneymanager.presentor.common.BaseActivity;
+
+public class IndividualMonthly extends BaseActivity {
 
 	private ArrayList<Entry> values;
 	private ArrayList<String> xVals;

@@ -2,8 +2,7 @@ package kaungmyatmin.com.moneymanager.Model;
 
 import java.security.acl.LastOwnerException;
 
-import com.trio.moneymanager.DB.ValHolder;
-import com.trio.moneymanager.POJO.MobileData;
+
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -14,6 +13,9 @@ import android.net.TrafficStats;
 import android.net.Uri;
 import android.provider.CallLog;
 import android.provider.CallLog.Calls;
+
+import kaungmyatmin.com.moneymanager.DB.ValHolder;
+import kaungmyatmin.com.moneymanager.POJO.MobileData;
 
 public class MobileDataHandler {
 

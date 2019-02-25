@@ -1,4 +1,4 @@
-package kaungmyatmin.com.moneymanager;
+package kaungmyatmin.com.moneymanager.presentor.fragment;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -14,8 +14,6 @@ import com.github.mikephil.charting.components.XAxis.XAxisPosition;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
-import com.trio.moneymanager.DB.ValHolder;
-import com.trio.moneymanager.Model.UsageHandler;
 
 import android.app.ListActivity;
 import android.content.Context;
@@ -35,7 +33,13 @@ import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
-public class FragUsage extends Fragment {
+import kaungmyatmin.com.moneymanager.CustomMarkerView;
+import kaungmyatmin.com.moneymanager.DB.ValHolder;
+import kaungmyatmin.com.moneymanager.Model.UsageHandler;
+import kaungmyatmin.com.moneymanager.R;
+import kaungmyatmin.com.moneymanager.presentor.fragment.common.BaseFragment;
+
+public class FragUsage extends BaseFragment {
 
 	private Context context;
 	private Button button;
@@ -54,10 +58,7 @@ public class FragUsage extends Fragment {
 	
 	 private String Daily;
 	 private String Monthly;
-	
-	public FragUsage(Context context) {
-		this.context = context;
-	}
+
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,

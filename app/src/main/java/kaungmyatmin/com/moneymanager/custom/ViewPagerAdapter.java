@@ -1,14 +1,14 @@
 package kaungmyatmin.com.moneymanager.custom;
 
-import com.trio.moneymanager.FragIndividualUsage;
-import com.trio.moneymanager.FragUsage;
-import com.trio.moneymanager.R;
-
 import android.app.Activity;
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+
+import kaungmyatmin.com.moneymanager.R;
+import kaungmyatmin.com.moneymanager.presentor.fragment.FragIndividualUsage;
+import kaungmyatmin.com.moneymanager.presentor.fragment.FragUsage;
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 	private Context context;
@@ -27,9 +27,9 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 	public Fragment getItem(int position) {
 		switch (position) {
 		case 0:
-			return new FragUsage(context);
+			return new FragUsage();
 		case 1:
-			return new FragIndividualUsage(context, activity);
+			return new FragIndividualUsage();
 		
 		default:
 			return null;

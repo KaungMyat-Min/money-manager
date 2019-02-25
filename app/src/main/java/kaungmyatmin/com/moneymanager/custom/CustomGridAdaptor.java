@@ -1,7 +1,6 @@
 package kaungmyatmin.com.moneymanager.custom;
 
 import java.util.ArrayList;
-import com.trio.moneymanager.R;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import kaungmyatmin.com.moneymanager.R;
 
 public class CustomGridAdaptor extends BaseAdapter {
 

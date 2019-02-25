@@ -1,12 +1,10 @@
-package kaungmyatmin.com.moneymanager;
+package kaungmyatmin.com.moneymanager.presentor;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
-import java.util.HashSet;
 
-import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.database.Cursor;
@@ -14,10 +12,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.view.ActionMode;
 import android.support.v7.widget.Toolbar;
-import android.text.method.HideReturnsTransformationMethod;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -27,7 +23,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.Button;
-import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.OnChildClickListener;
@@ -39,14 +34,16 @@ import android.widget.TimePicker;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Toast;
 
-import com.trio.moneymanager.DB.DataBaseAdaptor;
-import com.trio.moneymanager.DB.ValHolder;
-import com.trio.moneymanager.Model.UsageHandler;
-import com.trio.moneymanager.POJO.UsageData;
-import com.trio.moneymanager.custom.CustomExpandableListAdaptor;
-import com.trio.moneymanager.custom.CustomGridAdaptor;
+import kaungmyatmin.com.moneymanager.DB.DataBaseAdaptor;
+import kaungmyatmin.com.moneymanager.DB.ValHolder;
+import kaungmyatmin.com.moneymanager.Model.UsageHandler;
+import kaungmyatmin.com.moneymanager.POJO.UsageData;
+import kaungmyatmin.com.moneymanager.R;
+import kaungmyatmin.com.moneymanager.custom.CustomExpandableListAdaptor;
+import kaungmyatmin.com.moneymanager.custom.CustomGridAdaptor;
+import kaungmyatmin.com.moneymanager.presentor.common.BaseActivity;
 
-public class EditDaily extends ActionBarActivity {
+public class EditDaily extends BaseActivity {
 
 	private GridView gridView;
 	private Button showGrid;

@@ -1,14 +1,13 @@
 package kaungmyatmin.com.moneymanager.Model;
 
 import java.util.Calendar;
-
-import com.trio.moneymanager.DB.ValHolder;
-import com.trio.moneymanager.POJO.UserData;
-
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.preference.PreferenceManager;
+
+import kaungmyatmin.com.moneymanager.DB.ValHolder;
+import kaungmyatmin.com.moneymanager.POJO.UserData;
 
 public class UserDataHandler {
 	private Context context;

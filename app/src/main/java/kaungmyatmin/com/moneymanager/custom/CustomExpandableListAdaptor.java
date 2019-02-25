@@ -8,9 +8,6 @@ import java.util.HashMap;
 
 import org.w3c.dom.Text;
 
-import com.trio.moneymanager.R;
-import com.trio.moneymanager.POJO.UsageData;
-
 import android.app.Activity;
 import android.app.TimePickerDialog;
 import android.content.Context;
@@ -22,6 +19,9 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.TimePicker;
+
+import kaungmyatmin.com.moneymanager.POJO.UsageData;
+import kaungmyatmin.com.moneymanager.R;
 
 public class CustomExpandableListAdaptor extends BaseExpandableListAdapter {
 

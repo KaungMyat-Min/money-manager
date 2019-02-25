@@ -2,10 +2,12 @@ package kaungmyatmin.com.moneymanager.custom;
 
 import android.content.Context;
 import android.graphics.Typeface;
+import android.support.v7.widget.AppCompatButton;
 import android.util.AttributeSet;
-import android.widget.Button;
 
-public class CustomButton extends Button{
+
+
+public class CustomButton extends AppCompatButton {
 	public CustomButton(Context context) {
 		super(context);
 		init();
@@ -25,8 +27,8 @@ public class CustomButton extends Button{
 
 	public CustomButton(Context context, AttributeSet attrs,
 			int defStyleAttr, int defStyleRes) {
-		super(context, attrs, defStyleAttr, defStyleRes);
-		init();
+        super(context,attrs,defStyleAttr);
+        init();
 		}
 
 	private void init(){

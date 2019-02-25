@@ -1,12 +1,11 @@
 package kaungmyatmin.com.moneymanager.DB;
 
 import java.util.ArrayList;
-
-import com.trio.moneymanager.POJO.UsageData;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+
+import kaungmyatmin.com.moneymanager.POJO.UsageData;
 
 public class DataBaseAdaptor {
 	Context context;
@@ -48,7 +47,7 @@ public class DataBaseAdaptor {
 	public Cursor selectWithRawQuery(String sql, String [] args){
 		return DBHelper.selectColumns(sql, args);
 	}
-	public ArrayList<UsageData> select(String whereClause,String groupBy) {
+	public ArrayList<UsageData> select(String whereClause, String groupBy) {
 		ArrayList<UsageData> dataArray = null;
 		Cursor c = DBHelper.select(tableName, whereClause,groupBy);
 		if (c != null) {

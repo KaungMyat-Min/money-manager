@@ -1,7 +1,6 @@
 package kaungmyatmin.com.moneymanager.backgroundTasks;
 
-import com.trio.moneymanager.R;
-import com.trio.moneymanager.DB.ValHolder;
+
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -13,7 +12,12 @@ import android.content.SharedPreferences;
 import android.graphics.BitmapFactory;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
-import android.support.v7.app.NotificationCompat;
+import android.support.v4.app.NotificationCompat;
+
+import kaungmyatmin.com.moneymanager.DB.ValHolder;
+import kaungmyatmin.com.moneymanager.R;
+import kaungmyatmin.com.moneymanager.presentor.MainActivity;
+
 
 public class ServiceNoti extends Service {
 
@@ -39,13 +43,13 @@ public class ServiceNoti extends Service {
 
 	private void showNoti() {
 		Intent intent = new Intent(this,
-				com.trio.moneymanager.MainActivity.class);
+				MainActivity.class);
 		PendingIntent pIntent = PendingIntent.getActivity(this, 0, intent, 0);	
 		Notification notification = new NotificationCompat.Builder(this)
-				.setSmallIcon(R.drawable.noti)
+				.setSmallIcon(R.drawable.ic_launcher_foreground)
 				.setContentTitle("HI")
 				.setContentText("Need to save some Usages?")
-				.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher))
+				.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher_foreground))
 				.setAutoCancel(true)
 				.setContentIntent(pIntent).build();
 		NotificationManager notiManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);

@@ -1,23 +1,23 @@
-package kaungmyatmin.com.moneymanager;
+package kaungmyatmin.com.moneymanager.presentor.fragment;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
 
-import android.R.integer;
+
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.Context;
-import android.content.DialogInterface;
+
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.content.res.Resources;
 import android.database.Cursor;
-import android.graphics.Canvas;
+
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -52,20 +52,19 @@ import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.data.Entry;
-import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.listener.ChartTouchListener.ChartGesture;
 import com.github.mikephil.charting.listener.OnChartGestureListener;
-import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
-import com.github.mikephil.charting.renderer.DataRenderer;
-import com.github.mikephil.charting.renderer.XAxisRendererHorizontalBarChart;
-import com.trio.moneymanager.DB.DataBaseAdaptor;
-import com.trio.moneymanager.DB.ValHolder;
-import com.trio.moneymanager.Model.UsageHandler;
-import com.trio.moneymanager.Model.UserDataHandler;
-import com.trio.moneymanager.POJO.UsageData;
+
+import kaungmyatmin.com.moneymanager.DB.DataBaseAdaptor;
+import kaungmyatmin.com.moneymanager.DB.ValHolder;
+import kaungmyatmin.com.moneymanager.Model.UsageHandler;
+import kaungmyatmin.com.moneymanager.R;
+import kaungmyatmin.com.moneymanager.presentor.EditDaily;
+import kaungmyatmin.com.moneymanager.presentor.IndividualMonthly;
+import kaungmyatmin.com.moneymanager.presentor.fragment.common.BaseFragment;
 
 @TargetApi(Build.VERSION_CODES.GINGERBREAD)
-public class FragIndividualUsage extends Fragment {
+public class FragIndividualUsage extends BaseFragment {
 	private Button datePick;
 	private Button maxCanUse;
 	private HorizontalBarChart usage;
@@ -92,10 +91,11 @@ public class FragIndividualUsage extends Fragment {
 	private int useRemain;
 	private boolean isDaily;
 
-	public FragIndividualUsage(Context context, Activity activity) {
-		this.context = context;
-		this.callerActivity = activity;
+	public FragIndividualUsage(){
+
 	}
+
+
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -433,7 +433,7 @@ public class FragIndividualUsage extends Fragment {
 			// id for income or outcome
 
 			Intent i = new Intent(context,
-					com.trio.moneymanager.EditDaily.class);
+					EditDaily.class);
 			i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
 			i.putExtra(ValHolder.YEAR, calendar.get(Calendar.YEAR));
@@ -478,7 +478,7 @@ public class FragIndividualUsage extends Fragment {
 			int xIndex = entry.getXIndex();
 			String title = xVals.get(xIndex);
 			Intent i = new Intent(context,
-					com.trio.moneymanager.IndividualMonthly.class);
+					IndividualMonthly.class);
 			i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 			i.putExtra(ValHolder.MONTH, calendar.get(Calendar.MONTH));
 			i.putExtra(ValHolder.YEAR, calendar.get(Calendar.YEAR));

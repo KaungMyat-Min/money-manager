@@ -6,8 +6,6 @@ import java.util.Calendar;
 import java.util.HashMap;
 
 import com.github.mikephil.charting.data.Entry;
-import com.trio.moneymanager.R;
-import com.trio.moneymanager.POJO.UsageData;
 
 import android.app.Activity;
 import android.content.Context;
@@ -17,6 +15,9 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import kaungmyatmin.com.moneymanager.POJO.UsageData;
+import kaungmyatmin.com.moneymanager.R;
 
 public class CustomExpandableListAdaptorIndividualDaily extends
 		BaseExpandableListAdapter {
