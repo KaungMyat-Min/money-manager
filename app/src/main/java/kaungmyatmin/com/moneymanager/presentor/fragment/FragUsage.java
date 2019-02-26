@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.Locale;
 
 import com.github.mikephil.charting.animation.Easing;
-import com.github.mikephil.charting.charts.Chart;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
@@ -15,27 +14,21 @@ import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 
-import android.app.ListActivity;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.ListAdapter;
 import android.widget.Spinner;
-import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
 import kaungmyatmin.com.moneymanager.CustomMarkerView;
 import kaungmyatmin.com.moneymanager.DB.ValHolder;
-import kaungmyatmin.com.moneymanager.Model.UsageHandler;
+import kaungmyatmin.com.moneymanager.Models.UsageHandler;
 import kaungmyatmin.com.moneymanager.R;
 import kaungmyatmin.com.moneymanager.presentor.fragment.common.BaseFragment;
 

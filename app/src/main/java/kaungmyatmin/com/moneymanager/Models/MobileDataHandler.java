@@ -1,17 +1,11 @@
-package kaungmyatmin.com.moneymanager.Model;
-
-import java.security.acl.LastOwnerException;
-
+package kaungmyatmin.com.moneymanager.Models;
 
 
 import android.content.ContentResolver;
 import android.content.Context;
 import android.database.Cursor;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.net.TrafficStats;
 import android.net.Uri;
-import android.provider.CallLog;
 import android.provider.CallLog.Calls;
 
 import kaungmyatmin.com.moneymanager.DB.ValHolder;

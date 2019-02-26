@@ -1,21 +1,16 @@
-package kaungmyatmin.com.moneymanager.Model;
+package kaungmyatmin.com.moneymanager.Models;
 
-import java.security.interfaces.RSAKey;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 
-import android.R.bool;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.res.Resources;
 import android.database.Cursor;
-import android.graphics.Color;
 
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.data.Entry;
-import com.github.mikephil.charting.data.LineData;
-import com.github.mikephil.charting.data.LineDataSet;
 
 import kaungmyatmin.com.moneymanager.DB.DataBaseAdaptor;
 import kaungmyatmin.com.moneymanager.DB.ValHolder;

@@ -36,7 +36,7 @@ import android.widget.Toast;
 
 import kaungmyatmin.com.moneymanager.DB.DataBaseAdaptor;
 import kaungmyatmin.com.moneymanager.DB.ValHolder;
-import kaungmyatmin.com.moneymanager.Model.UsageHandler;
+import kaungmyatmin.com.moneymanager.Models.UsageHandler;
 import kaungmyatmin.com.moneymanager.POJO.UsageData;
 import kaungmyatmin.com.moneymanager.R;
 import kaungmyatmin.com.moneymanager.custom.CustomExpandableListAdaptor;
